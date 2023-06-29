@@ -77,9 +77,11 @@ const userInput = [
     },
 ];
     
-
 // Define functionality for creating the README file
-    // Create a function that writes user input data to README file 
+    // Create a function that writes user input data to README file
+    function writeToFile(fileName, data) {
+        return fs.writeFileSync(path.join(__dirname(), fileName), data)
+    }
 
 // Initialize the application
     // init function
