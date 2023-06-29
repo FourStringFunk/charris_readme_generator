@@ -1,7 +1,7 @@
 // Define the packages that are required for this application to run
-    // - Inquirer
-    // - fs
-    // - path
+    const inquirer = require("inquirer") // - Inquirer
+    const fs = require("fs"); // - fs
+    const path = require("path") // - path
     // - README styles(?)
 
 // Define the list of question prompts and answer fields to collect information from the user
