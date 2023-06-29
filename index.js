@@ -1,7 +1,8 @@
 // Define the packages that are required for this application to run
     const inquirer = require("inquirer") // - Inquirer
     const fs = require("fs"); // - fs
-    const path = require("path") // - path
+    const path = require("path"); // - path
+const { error } = require("console");
     // - README styles(?)
 
 // Define the list of question prompts and answer fields to collect information from the user
@@ -85,6 +86,18 @@ const userInput = [
 
 // Initialize the application
     // init function
+    function init() {
+        inquirer
+            .createPromptModule(userInput);
+            .then((answers) => {
+                console.log(answers);
+                writeToFile("README.md", (answers));
+            })
+            .catch((error) = > {
+                console.log(error);
+            })
+    }
     // init function call
+    init();
 
 // Figure out how the heck I apply README styles to the file I created.
