@@ -12,14 +12,14 @@ function markdownStyles(data) {
         ### ACCEPTANCE CRITERIA
 
         ## TABLE OF CONTENTS
-        - ${data.toc[0]}
-        - ${data.toc[1]}
-        - ${data.toc[2]}
-        - ${data.toc[3]}
-        - ${data.toc[4]}
-        - ${data.toc[5]}
-        - ${data.toc[6]}
-        - ${data.toc[7]}
+        - [INSTALLATION](#installation)
+        - [USAGE](#usage)
+        - [CREDITS](#credits)
+        - [LICENSE](#license)
+        - [BADGES](#badges)
+        - [FEATURES](#features)
+        - [HOW TO CONTRIBUTE](#how-to-contribute)
+        - [TESTS](#tests)
 
         ## INSTALLATION 
         ${data.installation}
@@ -30,8 +30,12 @@ function markdownStyles(data) {
         ## CREDITS 
         ${data.credits}
 
+        ### QUESTIONS
+        For questions about this project, please contact ${data.name} at ${data.email}. You can also view this project on my github: ${data.github}.
+
         ## LICENSE 
         ${data.license}
+        Copyright (c) 2023 ${data.name}
 
         ## BADGES 
         ${data.badges}
