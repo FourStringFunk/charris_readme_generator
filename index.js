@@ -100,5 +100,3 @@ const userInput = [
     }
     // init function call
     init();
-
-// Figure out how the heck I apply README styles to the file I created.
