@@ -18,7 +18,19 @@ const userInput = [
     {
         type: "input",
         name: "description",
-        message: "Please provide a 2-3 sentence describing your project:",
+        message: "Please provide a 2-3 sentence description of your project:",
+    },
+    // USER STORY
+    {
+        type: "input",
+        name: "story",
+        message: "Please define the user story for this project here:"
+    },
+    // ACCEPTANCE CRITERIA
+    {
+        type: "input",
+        name: "criteria",
+        message: "Please define the acceptance criteria for this project here:"
     },
     // TABLE OF CONTENTS
     {

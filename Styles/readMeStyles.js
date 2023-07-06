@@ -6,6 +6,11 @@ function markdownStyles(data) {
         ## DESCRIPTION
         ${data.description}
 
+        ### USER STORY
+        ${data.story}
+
+        ### ACCEPTANCE CRITERIA
+
         ## TABLE OF CONTENTS
         - ${data.toc[0]}
         - ${data.toc[1]}
