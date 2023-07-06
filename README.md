@@ -1,15 +1,14 @@
+# PROFESSIONAL README GENERATOR
 
-        # PROFESSIONAL README GENERATOR
+## DESCRIPTION
+The purpose of this exercise was to build a PROFESSIONAL README GENERATOR that can be run from and filled out within the terminal. The file output should include basic markdown/styles applied to the sections within the README document.
 
-        ## DESCRIPTION
-        The purpose of this exercise was to build a PROFESSIONAL README GENERATOR that can be run from and filled out within the terminal. The file output should include basic markdown/styles applied to the sections within the README document.
+### USER STORY
+AS A developer, I WANT a  README generator, SO THAT I can quickly create a professional README for a new project. 
 
-        ### USER STORY
-        AS A developer, I WANT a  README generator, SO THAT I can quickly create a professional README for a new project. 
+### ACCEPTANCE CRITERIA
 
-        ### ACCEPTANCE CRITERIA
-
-        ## TABLE OF CONTENTS
+## TABLE OF CONTENTS
         - [INSTALLATION](#installation)
         - [USAGE](#usage)
         - [CREDITS](#credits)
