@@ -32,13 +32,6 @@ const userInput = [
         name: "criteria",
         message: "Please define the acceptance criteria for this project here:"
     },
-    // TABLE OF CONTENTS
-    {
-        type: "checkbox",
-        name: "toc",
-        message: "Build your Table of Contents by selecting all that apply. Only select those fields for which you plan to add detailed information.",
-        choices: ["INSTALLATION", "USAGE", "CREDITS", "LICENSE", "BADGES", "FEATURES", "HOW TO CONTRIBUTE", "TESTS"],
-    },
     // INSTALLATION
     {
         type: "input",
@@ -56,6 +49,22 @@ const userInput = [
         type: "input",
         name: "credits",
         message: "Who contributed to the success of this project and deserves credit?",
+    },
+    // QUESTIONS
+    {
+        type: "input",
+        name: "name",
+        message: "Please enter your full name."
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please enter your email address."
+    },
+    {
+        type: "input",
+        name: "github",
+        message: "Please enter the link to your GitHub profile."
     },
     // LICENSE
     {
@@ -81,7 +90,7 @@ const userInput = [
     {
         type: "input",
         name: "contribute",
-        message: "Write a 2-3 sentence description of how you would like other to contribute to this project:",
+        message: "Write a 2-3 sentence description of how you would like others to contribute to this project:",
     }, 
     // TESTS
     {
