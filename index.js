@@ -2,9 +2,9 @@
     const inquirer = require("inquirer"); // - Inquirer
     const fs = require("fs"); // - fs
     const path = require("path"); // - path
-const { error } = require("console");
-const { errorMonitor } = require("events");
-    // - README styles(?)
+
+    // - README styles
+    const markdownStyles = require("./Styles/readMeStyles");
 
 // Define the list of question prompts and answer fields to collect information from the user
 const userInput = [
@@ -18,7 +18,7 @@ const userInput = [
     {
         type: "input",
         name: "description",
-        message: "Please provide a 2-3 sentence describing your project",
+        message: "Please provide a 2-3 sentence describing your project:",
     },
     // TABLE OF CONTENTS
     {
@@ -31,13 +31,13 @@ const userInput = [
     {
         type: "input",
         name: "installation",
-        message: "Please provide an overview of how to install the application",
+        message: "Please provide an overview of how to install the application:",
     },
     // USAGE
     {
         type: "input",
         name: "usage",
-        message: "Please provide an overview of how to use the application.",
+        message: "Please provide an overview of how to use the application:",
     },
     // CREDITS
     {
@@ -63,26 +63,26 @@ const userInput = [
     {
         type: "input",
         name: "features",
-        message: "Describe the features of your project below.",
+        message: "Describe the features of your project below:",
     },
     // HOW TO CONTRIBUTE
     {
         type: "input",
         name: "contribute",
-        message: "Write a 2-3 sentence description of how you would like other to contribute to this project.",
-    },
+        message: "Write a 2-3 sentence description of how you would like other to contribute to this project:",
+    }, 
     // TESTS
     {
         type: "input",
         name: "tests",
-        message: "Please lists the tests you built for your project and how to run them.",
+        message: "Please lists the tests you built for your project and how to run them:",
     },
 ];
     
 // Define functionality for creating the README file
     // Create a function that writes user input data to README file
     function writeToFile(fileName, data) {
-        return fs.writeFileSync(path.join(__dirname(), fileName), data)
+        return fs.writeFileSync(path.join(process.cwd(), fileName), data);
     }
 
 // Initialize the application
@@ -92,7 +92,7 @@ const userInput = [
             .prompt(userInput)
             .then((answers) => {
                 console.log(answers);
-                writeToFile("README.md", answers);
+                writeToFile("README.md", markdownStyles(answers));
             })
             .catch((err) => {
                 console.log(err);
